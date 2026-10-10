@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+       }
+       body{
+        padding-bottom: 70px;
+        scroll-behavior: smooth;
+       }
+
+       .icons ul{
+        display: flex;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        gap: 50px;
+        font-size: 30px;
+        /* border-bottom: 2px solid grey; */
+       }
+      .navbar{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+       
+      }
+      .navbar ul{
+        display: flex;
+        justify-content: center;
+        /* border-top: 2px solid black; */
+        box-shadow: 9px 0px 90px rgba(0, 0, 0, 0.6);
+        background-color: rgb(231, 229, 225);
+
+      }
+      .navbar ul li{
+        padding: 10px 20px;
+      }
+      .hero{
+       min-height: 100vh;
+        /* margin: 90px 0; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     line-height: 50px;
+
+      }
+       .hero h1{
+        font: 1em sans-serif;
+        font-size: 40px;
+      }
+      .hero p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        
+      }
+      .hero-button{
+        padding: 15px;
+        border-radius: 30px;
+        background-color: black;
+        color: aliceblue;
+        border: transparent;
+        }
+.Project h1{
+    text-align: center;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+.Project h1:hover{
+text-shadow: 10px 10px 2px rgb(53, 37, 7);
+    cursor: pointer;
+    z-index: 0;
+
+}
+.Project{
+    border-top: 2px solid black;
+}
+
+  #projects-item{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+  }
+        .cards{
+            text-align: center;
+            padding: 30px 0;
+            border: 2px solid black;
+            width: 300px;
+            height: 200px;
+            transition: all 0.4s ease;
+        }
+            .cards:hover,.cards button:hover{
+                transform: translatey(-2px);
+
+            box-shadow: 3px 3px 3px 3px rgb(45, 28, 7);
+        }
+    .cards button{
+        border: none;
+        padding: 10px;
+        background-color: black;
+        color: aliceblue;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="icons">
+                <ul>
+                    <li class="icon"><a href=""></a> <i class="fa-brands fa-instagram"></i></li>
+                    <li class="icon"><a href=""></a><i class="fa-brands fa-facebook"></i></li>
+                    <li class="icon"><a href=""></a><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li class="icon"><a href=""></a><i class="fa-brands fa-github"></i></li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li class="active">Home</li>
+                    <li>Skills</li>
+                    <li>Project</li>
+                    <li>Contact</li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Hi,I'm Andleef Amin</h1>
+                <p>Full Stack Web Developer</p>
+                <button class="hero-button">Dowmload Resume <i class="fa-solid fa-download"></i></button>
+            </div>
+            </div>
+            <section class="Project">
+                <h1>My Latest Projects</h1>
+                <div id="projects-item">
+                    <div class="cards">
+                        <img src="#" alt="">
+                        <h2>Project 1</h2>
+                        <p>This si for </p>
+                        <button>Live</button>
+                        <button>Repo</button>
+                    </div>
+                    <div class="cards">
+                        <img src="#" alt="">
+                        <h2>Project 2</h2>
+                        <p>This si for </p>
+                        <button>Live</button>
+                        <button>Repo</button>
+                    </div>
+                    <div class="cards">
+                        <img src="#" alt="">
+                        <h2>Project 3</h2>
+                        <p>This si for </p>
+                        <button>Live</button>
+                        <button>Repo</button>
+                    </div>
+                    <div class="cards">
+                        <img src="#" alt="">
+                        <h2>Project 4</h2>
+                        <p>This si for </p>
+                        <button>Live</button>
+                        <button>Repo</button>
+                    </div>
+                    <div class="cards">
+                        <img src="#" alt="">
+                        <h2>Project 5</h2>
+                        <p>This si for </p>
+                        <button>Live</button>
+                        <button>Repo</button>
+                    </div>
+                </div>
+
+            </section>
+            
+    </main>
+
+</body>
+
+</html>
